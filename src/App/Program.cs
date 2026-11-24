@@ -8,6 +8,7 @@ Console.WriteLine("2 - Even");
 Console.WriteLine("3 - Calc");
 Console.WriteLine("4 - GCD");
 Console.WriteLine("5 - Progression");
+Console.WriteLine("6 - Prime");
 Console.WriteLine("0 - Exit");
 Console.WriteLine("Your choice: ");
 string? choice = Console.ReadLine();
@@ -27,6 +28,9 @@ switch (choice)
         break;
     case "5":
         Engine.Play(new Progression());
+        break;
+    case "6":
+        Engine.Play(new Prime());
         break;
     default:
         Console.WriteLine("Bye!");

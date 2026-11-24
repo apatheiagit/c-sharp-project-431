@@ -2,7 +2,6 @@ namespace App.Games;
 
 public class Progression : IGame
 {
-    
     private const int MinLength = 5;
     private const int MaxLength = 10;
     private const int MinStep = 1;
@@ -24,7 +23,12 @@ public class Progression : IGame
         return (question, skip.ToString());
     }
 
-    private static (string Question, int Skip) BuildSubsequence(int start, int step, int skipIndex, int length)
+    private static (string Question, int Skip) BuildSubsequence(
+        int start,
+        int step,
+        int skipIndex,
+        int length
+    )
     {
         var items = new string[length];
 
