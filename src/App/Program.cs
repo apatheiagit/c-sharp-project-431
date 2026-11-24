@@ -36,4 +36,3 @@ switch (choice)
         Console.WriteLine("Bye!");
         break;
 }
-Console.ReadLine();
