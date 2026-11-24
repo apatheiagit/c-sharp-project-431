@@ -7,6 +7,7 @@ Console.WriteLine("1 - Greet");
 Console.WriteLine("2 - Even");
 Console.WriteLine("3 - Calc");
 Console.WriteLine("4 - GCD");
+Console.WriteLine("5 - Progression");
 Console.WriteLine("0 - Exit");
 Console.WriteLine("Your choice: ");
 string? choice = Console.ReadLine();
@@ -23,6 +24,9 @@ switch (choice)
         break;
     case "4":
         Engine.Play(new Gcd());
+        break;
+    case "5":
+        Engine.Play(new Progression());
         break;
     default:
         Console.WriteLine("Bye!");
